@@ -1,14 +1,10 @@
-VRaptor 3
+Url Reverse
 =========
 
-A web MVC framework for fast and maintainable development.
-It's website can be found at http://vraptor.org/en
+Application to reverse strings that are reversed
 
-Building in your machine
+Usage
 ========================
 
-If you want to use the example applications contained within vraptor, execute:
-
-  ant deploy-to-examples
-
-And then configure the projects in your eclipse using classpath.example and project.example files.
+Just run the app, and copy the url reversed.
+When you paste the url will be reverse to normal!
