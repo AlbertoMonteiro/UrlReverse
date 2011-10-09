@@ -36,7 +36,6 @@ namespace UrlReverse
             this.notificationIcon = new System.Windows.Forms.NotifyIcon(this.components);
             this.ctxNotifyMenu = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.fecharToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.label1 = new System.Windows.Forms.Label();
             this.ctxNotifyMenu.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -44,7 +43,7 @@ namespace UrlReverse
             // 
             this.notificationIcon.ContextMenuStrip = this.ctxNotifyMenu;
             this.notificationIcon.Icon = ((System.Drawing.Icon)(resources.GetObject("notificationIcon.Icon")));
-            this.notificationIcon.Text = "notifyIcon1";
+            this.notificationIcon.Text = "Url Reverse";
             this.notificationIcon.Visible = true;
             // 
             // ctxNotifyMenu
@@ -56,29 +55,21 @@ namespace UrlReverse
             // 
             // fecharToolStripMenuItem
             // 
+            this.fecharToolStripMenuItem.Image = global::UrlReverse.Properties.Resources.Close;
             this.fecharToolStripMenuItem.Name = "fecharToolStripMenuItem";
             this.fecharToolStripMenuItem.Size = new System.Drawing.Size(109, 22);
             this.fecharToolStripMenuItem.Text = "&Fechar";
             this.fecharToolStripMenuItem.Click += new System.EventHandler(this.FecharToolStripMenuItemClick);
             // 
-            // label1
-            // 
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label1.Location = new System.Drawing.Point(12, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(260, 58);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "label1";
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 262);
-            this.Controls.Add(this.label1);
+            this.ClientSize = new System.Drawing.Size(0, 0);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.Activated += new System.EventHandler(this.Form1Activated);
             this.ctxNotifyMenu.ResumeLayout(false);
@@ -91,7 +82,6 @@ namespace UrlReverse
         private NotifyIcon notificationIcon;
         private ContextMenuStrip ctxNotifyMenu;
         private ToolStripMenuItem fecharToolStripMenuItem;
-        private Label label1;
     }
 }
 

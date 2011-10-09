@@ -30,7 +30,6 @@ namespace UrlReverse
 
         protected override void WndProc(ref Message m)
         {
-            System.Diagnostics.Debugger.Launch();
             switch (m.Msg)
             {
                 case WM_DRAWCLIPBOARD:
@@ -58,9 +57,12 @@ namespace UrlReverse
             {
                 var regex = new Regex(@"(?'url'[\w\.\/\?\=\-\&]+//:ptth)$");
                 var match = regex.Match(iData);
-                var url = match.Groups["url"].Value.Inverter();
-                Clipboard.SetText(url);
-                notificationIcon.ShowBalloonTip(1000, "Inversor de Url", "Url revertida", ToolTipIcon.Info);
+                if (match.Success)
+                {
+                    var url = match.Groups["url"].Value.Inverter();
+                    Clipboard.SetText(url);
+                    notificationIcon.ShowBalloonTip(1000, "Inversor de Url", "Url revertida", ToolTipIcon.Info); 
+                }
             }
         }
 

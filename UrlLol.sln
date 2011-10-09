@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UrlReverse", "UrlReverse\UrlReverse.csproj", "{4D6D74A5-2C33-45B5-A6FE-C5DAB314E2A1}"
 EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "UrlReverseInstaller", "UrlReverseInstaller\UrlReverseInstaller.vdproj", "{66211684-0614-4510-87A2-4AC5D7D1C184}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -13,6 +15,9 @@ Global
 		{4D6D74A5-2C33-45B5-A6FE-C5DAB314E2A1}.Debug|x86.Build.0 = Debug|x86
 		{4D6D74A5-2C33-45B5-A6FE-C5DAB314E2A1}.Release|x86.ActiveCfg = Release|x86
 		{4D6D74A5-2C33-45B5-A6FE-C5DAB314E2A1}.Release|x86.Build.0 = Release|x86
+		{66211684-0614-4510-87A2-4AC5D7D1C184}.Debug|x86.ActiveCfg = Debug
+		{66211684-0614-4510-87A2-4AC5D7D1C184}.Release|x86.ActiveCfg = Release
+		{66211684-0614-4510-87A2-4AC5D7D1C184}.Release|x86.Build.0 = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
